@@ -1,0 +1,8 @@
+postgres:
+  image: postgres:12.3
+  ports:
+    - '5432:5432'
+  environment:
+    - POSTGRES_USER=lambda
+    - POSTGRES_PASSWORD=conf
+    - POSTGRES_DB=lambdaconf
